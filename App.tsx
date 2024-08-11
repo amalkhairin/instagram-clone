@@ -79,10 +79,10 @@ export default function App() {
 					</View>
 
 					{FEEDS_DATA.map((item, index) => (
-						<View key={index} style={{ paddingVertical: 10 }}>
+						<View key={100+index} style={{ paddingVertical: 10 }}>
 							<View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginHorizontal: 10, marginVertical: 10 }}>
 								<View style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
-									<View style={{ width: 45, height: 45, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: '#ff2e43', borderRadius: 200, padding: 3 }}>
+									<View style={{ width: 45, height: 45, alignItems: 'center', justifyContent: 'center', borderWidth: item.hasActiveStory ? 2 : 0, borderColor: '#ff2e43', borderRadius: 200, padding: 3 }}>
 										<Image source={{ uri: item.imageUrl }} style={{ width: '100%', height: '100%', borderRadius: 200, objectFit: 'cover', borderWidth: 1, borderColor: 'gray' }} />
 									</View>
 									<View>
@@ -110,7 +110,7 @@ export default function App() {
 										</View>
 									</View>
 								))}
-								<Text style={{ fontWeight: '400', fontSize: 12, color: '#000000', marginLeft: 20 }}>liked by {item.feed.friendLikes[0].name} and {item.feed.totalLikes - 1} others</Text>
+								<Text style={{ fontWeight: '400', fontSize: 12, color: '#000000', marginLeft: 20 }}>liked by <Text style={{ fontWeight: 'bold', color: '#000000' }}>{item.feed.friendLikes[0].name}</Text> and <Text style={{ fontWeight: 'bold', color: '#000000' }}>{item.feed.totalLikes - 1} others</Text></Text>
 							</View>
 							<View style={{ marginHorizontal: 10, marginTop: 5 }}>
 								<Text><Text style={{ marginHorizontal: 10, fontWeight: 'bold', color: '#000000' }}>{item.username} </Text>{item.feed.caption}</Text>
