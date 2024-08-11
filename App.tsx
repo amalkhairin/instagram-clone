@@ -6,7 +6,10 @@ import AntDesign from '@expo/vector-icons/AntDesign';
 import Feather from '@expo/vector-icons/Feather';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import Foundation from '@expo/vector-icons/Foundation';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import Octicons from '@expo/vector-icons/Octicons';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
 import { STORY_DATA } from 'storyData';
 import { FEEDS_DATA } from 'data';
@@ -121,6 +124,15 @@ export default function App() {
 						</View>
 					))}
 				</ScrollView>
+				<View style={{ backgroundColor: '#FFFFFF', borderTopWidth: 1, borderColor: '#a3a3a3cb', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-around', padding: 10 }}>
+					<Foundation name="home" size={35} color="black" />
+					<Ionicons name="search" size={35} color="black" />
+					<Octicons name="diff-added" size={35} color="black" />
+					<MaterialIcons name="ondemand-video" size={35} color="black" />
+					<View style={{ width: 35, height: 35, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: 'gray', borderRadius: 200}}>
+						<Image source={{ uri: 'https://iili.io/d0RPABf.webp' }} style={{ width: '100%', height: '100%', borderRadius: 200, objectFit: 'cover', borderWidth: 1, borderColor: 'gray' }} />
+					</View>
+				</View>
 			</View>
 		</SafeAreaView>
 	);
