@@ -125,11 +125,11 @@ export default function App() {
 					))}
 				</ScrollView>
 				<View style={{ backgroundColor: '#FFFFFF', borderTopWidth: 1, borderColor: '#a3a3a3cb', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-around', padding: 10 }}>
-					<Foundation name="home" size={35} color="black" />
-					<Ionicons name="search" size={35} color="black" />
-					<Octicons name="diff-added" size={35} color="black" />
-					<MaterialIcons name="ondemand-video" size={35} color="black" />
-					<View style={{ width: 35, height: 35, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: 'gray', borderRadius: 200}}>
+					<Foundation name="home" size={30} color="black" />
+					<Ionicons name="search" size={30} color="black" />
+					<Octicons name="diff-added" size={30} color="black" />
+					<MaterialIcons name="ondemand-video" size={30} color="black" />
+					<View style={{ width: 30, height: 30, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: 'gray', borderRadius: 200}}>
 						<Image source={{ uri: 'https://iili.io/d0RPABf.webp' }} style={{ width: '100%', height: '100%', borderRadius: 200, objectFit: 'cover', borderWidth: 1, borderColor: 'gray' }} />
 					</View>
 				</View>
